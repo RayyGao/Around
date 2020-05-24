@@ -8,7 +8,7 @@ jobs:
       - checkout
       - setup_remote_docker
       - run: |
-          docker build -t [xgaoray]/around .
+          docker build -t xgaoray/around .
           docker login -u="$DOCKERHUB_USERNAME" -p="$DOCKERHUB_PASSWORD"
-          docker push [xgaoray]/around
+          docker push xgaoray/around
 
